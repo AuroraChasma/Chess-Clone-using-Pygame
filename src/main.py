@@ -1,5 +1,5 @@
 import pygame as pg
-from general_settings import *
+import settings
 
 
 
@@ -25,6 +25,6 @@ class ChessGame:
 
 
 if __name__ == "__main__":
-    chess_game = ChessGame(WINDOW_WIDTH, WINDOW_HEIGHT)
+    chess_game = ChessGame(settings.WINDOW_WIDTH, settings.WINDOW_HEIGHT)
     chess_game.run()
 
