@@ -4,11 +4,14 @@ from general_settings import *
 
 
 class ChessGame:
-    window = pg.display.set_mode((WIDTH, HEIGHT))
-    pg.display.set_caption("Chess Clone")
+    
+    def __init__(self, window_width, window_height):
+        self.window_width = window_width
+        self.window_height = window_height
 
-    def __init__(self):
-        pass
+        #setting up window
+        self.window = pg.display.set_mode((self.window_width, self.window_height))
+        pg.display.set_caption("Chess Clone")
 
     def run(self):
         runGame = True
@@ -22,6 +25,6 @@ class ChessGame:
 
 
 if __name__ == "__main__":
-    chess_game = ChessGame()
+    chess_game = ChessGame(WINDOW_WIDTH, WINDOW_HEIGHT)
     chess_game.run()
 
