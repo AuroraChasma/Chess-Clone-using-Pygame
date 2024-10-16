@@ -1,7 +1,6 @@
 import pygame as pg
 import settings
-
-
+pg.init()
 
 class ChessGame:
     
@@ -14,6 +13,7 @@ class ChessGame:
         pg.display.set_caption("Chess Clone")
 
     def run(self):
+        #main game loop
         runGame = True
         while runGame:
 
