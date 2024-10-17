@@ -12,7 +12,7 @@ class Board:
         y = 0
 
         for part in settings.CHESS_BOARD:
-            if part == 1:
+            if part == 1: #1 --> white
                 window.blit(settings.WHITE_PART, (x, y))
 
                 x += 100
@@ -20,7 +20,7 @@ class Board:
                     x = 0
                     y += 88
 
-            elif part == 0:
+            elif part == 0: #0--> black
                 window.blit(settings.BLACK_PART, (x, y))
                 x += 100
                 if x == 800:
