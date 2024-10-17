@@ -15,15 +15,15 @@ class Board:
             if part == 1: #1 --> white
                 window.blit(settings.WHITE_PART, (x, y))
 
-                x += 100
-                if x == 800:
+                x += settings.PART_WIDTH
+                if x == settings.WINDOW_WIDTH:
                     x = 0
-                    y += 88
+                    y += settings.PART_HEIGHT
 
             elif part == 0: #0--> black
                 window.blit(settings.BLACK_PART, (x, y))
-                x += 100
-                if x == 800:
+                x += settings.PART_WIDTH
+                if x == settings.WINDOW_WIDTH:
                     x = 0
-                    y += 88
+                    y += settings.PART_HEIGHT
 
